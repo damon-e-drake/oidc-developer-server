@@ -1,0 +1,162 @@
+[
+  {
+    "subject": "bugs",
+    "username": "bugs",
+    "email": "bugs.bunny@example.com",
+    "name": "Bugs Bunny",
+    "givenName": "Bugs",
+    "familyName": "Bunny",
+    "password": "Password123!",
+    "additionalClaims": {
+      "nickname": "Bugs",
+      "preferred_username": "bugs",
+      "email_verified": true,
+      "amr": ["pwd"],
+      "idp": "mock-idp"
+    }
+  },
+  {
+    "subject": "daffy",
+    "username": "daffy",
+    "email": "daffy.duck@example.com",
+    "name": "Daffy Duck",
+    "givenName": "Daffy",
+    "familyName": "Duck",
+    "password": "Password123!",
+    "additionalClaims": {
+      "nickname": "Daffy",
+      "preferred_username": "daffy",
+      "email_verified": true,
+      "amr": ["pwd"],
+      "idp": "mock-idp"
+    }
+  },
+  {
+    "subject": "tweety",
+    "username": "tweety",
+    "email": "tweety.bird@example.com",
+    "name": "Tweety Bird",
+    "givenName": "Tweety",
+    "familyName": "Bird",
+    "password": "Password123!",
+    "additionalClaims": {
+      "nickname": "Tweety",
+      "preferred_username": "tweety",
+      "email_verified": true,
+      "amr": ["pwd"],
+      "idp": "mock-idp"
+    }
+  },
+  {
+    "subject": "sylvester",
+    "username": "sylvester",
+    "email": "sylvester.cat@example.com",
+    "name": "Sylvester Cat",
+    "givenName": "Sylvester",
+    "familyName": "Cat",
+    "password": "Password123!",
+    "additionalClaims": {
+      "nickname": "Sly",
+      "preferred_username": "sylvester",
+      "email_verified": true,
+      "amr": ["pwd"],
+      "idp": "mock-idp"
+    }
+  },
+  {
+    "subject": "porky",
+    "username": "porky",
+    "email": "porky.pig@example.com",
+    "name": "Porky Pig",
+    "givenName": "Porky",
+    "familyName": "Pig",
+    "password": "Password123!",
+    "additionalClaims": {
+      "nickname": "Porky",
+      "preferred_username": "porky",
+      "email_verified": true,
+      "amr": ["pwd"],
+      "idp": "mock-idp"
+    }
+  },
+  {
+    "subject": "fred",
+    "username": "fred",
+    "email": "fred.flintstone@example.com",
+    "name": "Fred Flintstone",
+    "givenName": "Fred",
+    "familyName": "Flintstone",
+    "password": "Password123!",
+    "additionalClaims": {
+      "nickname": "Fred",
+      "preferred_username": "fred",
+      "email_verified": true,
+      "amr": ["pwd"],
+      "idp": "mock-idp"
+    }
+  },
+  {
+    "subject": "barney",
+    "username": "barney",
+    "email": "barney.rubble@example.com",
+    "name": "Barney Rubble",
+    "givenName": "Barney",
+    "familyName": "Rubble",
+    "password": "Password123!",
+    "additionalClaims": {
+      "nickname": "Barn",
+      "preferred_username": "barney",
+      "email_verified": true,
+      "amr": ["pwd"],
+      "idp": "mock-idp"
+    }
+  },
+  {
+    "subject": "george",
+    "username": "george",
+    "email": "george.jetson@example.com",
+    "name": "George Jetson",
+    "givenName": "George",
+    "familyName": "Jetson",
+    "password": "Password123!",
+    "additionalClaims": {
+      "nickname": "George",
+      "preferred_username": "george",
+      "email_verified": true,
+      "amr": ["pwd"],
+      "idp": "mock-idp"
+    }
+  },
+  {
+    "subject": "elroy",
+    "username": "elroy",
+    "email": "elroy.jetson@example.com",
+    "name": "Elroy Jetson",
+    "givenName": "Elroy",
+    "familyName": "Jetson",
+    "password": "Password123!",
+    "additionalClaims": {
+      "nickname": "Elroy",
+      "preferred_username": "elroy",
+      "email_verified": true,
+      "amr": ["pwd"],
+      "idp": "mock-idp"
+    }
+  },
+  {
+    "subject": "caveman",
+    "username": "caveman",
+    "email": "captain.caveman@example.com",
+    "name": "Captain Caveman",
+    "givenName": "Captain",
+    "familyName": "Caveman",
+    "password": "Password123!",
+    "additionalClaims": {
+      "nickname": "Cavey",
+      "preferred_username": "caveman",
+      "email_verified": true,
+      "amr": ["pwd"],
+      "idp": "mock-idp"
+    }
+  }
+]

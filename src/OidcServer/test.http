@@ -1,0 +1,166 @@
+### OIDC Server Test Requests
+### Base URL
+@baseUrl = http://localhost:4000
+
+### 1. Discovery Endpoint
+GET {{baseUrl}}/.well-known/openid-configuration
+
+###
+
+### 2. JWKS Endpoint
+GET {{baseUrl}}/jwks
+
+###
+
+### LOONEY TUNES
+
+### 3. Test Authorization - Bugs Bunny
+# @name authorizeBugs
+GET {{baseUrl}}/test/authorize?response_type=code&client_id=bugs&state=test123&scope=openid
+
+###
+
+### 4. Token Endpoint - Bugs Bunny
+POST {{baseUrl}}/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=authorization_code&code={{authorizeBugs.response.body.$.code}}&redirect_uri=https://localhost:9443/oauth/callback&client_id=bugs&client_secret=mock-secret
+
+###
+
+### 5. Test Authorization - Daffy Duck
+# @name authorizeDaffy
+GET {{baseUrl}}/test/authorize?response_type=code&client_id=daffy&state=test123&scope=openid
+
+###
+
+### 6. Token Endpoint - Daffy Duck
+POST {{baseUrl}}/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=authorization_code&code={{authorizeDaffy.response.body.$.code}}&redirect_uri=https://localhost:9443/oauth/callback&client_id=daffy&client_secret=mock-secret
+
+###
+
+### 7. Test Authorization - Tweety Bird
+# @name authorizeTweety
+GET {{baseUrl}}/test/authorize?response_type=code&client_id=tweety&state=test123&scope=openid
+
+###
+
+### 8. Token Endpoint - Tweety Bird
+POST {{baseUrl}}/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=authorization_code&code={{authorizeTweety.response.body.$.code}}&redirect_uri=https://localhost:9443/oauth/callback&client_id=tweety&client_secret=mock-secret
+
+###
+
+### 9. Test Authorization - Sylvester Cat
+# @name authorizeSylvester
+GET {{baseUrl}}/test/authorize?response_type=code&client_id=sylvester&state=test123&scope=openid
+
+###
+
+### 10. Token Endpoint - Sylvester Cat
+POST {{baseUrl}}/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=authorization_code&code={{authorizeSylvester.response.body.$.code}}&redirect_uri=https://localhost:9443/oauth/callback&client_id=sylvester&client_secret=mock-secret
+
+###
+
+### 11. Test Authorization - Porky Pig
+# @name authorizePorky
+GET {{baseUrl}}/test/authorize?response_type=code&client_id=porky&state=test123&scope=openid
+
+###
+
+### 12. Token Endpoint - Porky Pig
+POST {{baseUrl}}/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=authorization_code&code={{authorizePorky.response.body.$.code}}&redirect_uri=https://localhost:9443/oauth/callback&client_id=porky&client_secret=mock-secret
+
+###
+
+### THE FLINTSTONES
+
+### 13. Test Authorization - Fred Flintstone
+# @name authorizeFred
+GET {{baseUrl}}/test/authorize?response_type=code&client_id=fred&state=test123&scope=openid
+
+###
+
+### 14. Token Endpoint - Fred Flintstone
+POST {{baseUrl}}/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=authorization_code&code={{authorizeFred.response.body.$.code}}&redirect_uri=https://localhost:9443/oauth/callback&client_id=fred&client_secret=mock-secret
+
+###
+
+### 15. Test Authorization - Barney Rubble
+# @name authorizeBarney
+GET {{baseUrl}}/test/authorize?response_type=code&client_id=barney&state=test123&scope=openid
+
+###
+
+### 16. Token Endpoint - Barney Rubble
+POST {{baseUrl}}/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=authorization_code&code={{authorizeBarney.response.body.$.code}}&redirect_uri=https://localhost:9443/oauth/callback&client_id=barney&client_secret=mock-secret
+
+###
+
+### THE JETSONS
+
+### 17. Test Authorization - George Jetson
+# @name authorizeGeorge
+GET {{baseUrl}}/test/authorize?response_type=code&client_id=george&state=test123&scope=openid
+
+###
+
+### 18. Token Endpoint - George Jetson
+POST {{baseUrl}}/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=authorization_code&code={{authorizeGeorge.response.body.$.code}}&redirect_uri=https://localhost:9443/oauth/callback&client_id=george&client_secret=mock-secret
+
+###
+
+### 19. Test Authorization - Elroy Jetson
+# @name authorizeElroy
+GET {{baseUrl}}/test/authorize?response_type=code&client_id=elroy&state=test123&scope=openid
+
+###
+
+### 20. Token Endpoint - Elroy Jetson
+POST {{baseUrl}}/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=authorization_code&code={{authorizeElroy.response.body.$.code}}&redirect_uri=https://localhost:9443/oauth/callback&client_id=elroy&client_secret=mock-secret
+
+###
+
+### CAPTAIN CAVEMAN
+
+### 21. Test Authorization - Captain Caveman
+# @name authorizeCaptain
+GET {{baseUrl}}/test/authorize?response_type=code&client_id=captain&state=test123&scope=openid
+
+###
+
+### 22. Token Endpoint - Captain Caveman
+POST {{baseUrl}}/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=authorization_code&code={{authorizeCaptain.response.body.$.code}}&redirect_uri=https://localhost:9443/oauth/callback&client_id=captain&client_secret=mock-secret
+
+###
+
+### User Info Endpoint
+GET {{baseUrl}}/userinfo
+
+###

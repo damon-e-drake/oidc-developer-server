@@ -1,0 +1,47 @@
+{
+  "supportedScopes": [
+    "openid",
+    "profile",
+    "email"
+  ],
+  "supportedClaims": [
+    "iss",
+    "ver",
+    "sub",
+    "aud",
+    "iat",
+    "exp",
+    "jti",
+    "auth_time",
+    "amr",
+    "idp",
+    "nonce",
+    "name",
+    "nickname",
+    "preferred_username",
+    "given_name",
+    "middle_name",
+    "family_name",
+    "email",
+    "email_verified"
+  ],
+  "responseTypesSupported": [
+    "code",
+    "token",
+    "id_token"
+  ],
+  "grantTypesSupported": [
+    "authorization_code",
+    "implicit",
+    "refresh_token"
+  ],
+  "subjectTypesSupported": [
+    "public"
+  ],
+  "idTokenSigningAlgValuesSupported": [
+    "HS256"
+  ],
+  "tokenEndpointAuthMethodsSupported": [
+    "client_secret_basic"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "keys": [
+    {
+      "kty": "RSA",
+      "kid": "mock-key",
+      "use": "sig",
+      "alg": "RS256",
+      "n": "mockn",
+      "e": "AQAB"
+    }
+  ]
+}

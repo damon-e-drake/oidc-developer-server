@@ -109,7 +109,7 @@ public class OidcController(IOptions<OidcSettings> settings, OidcUserStore userS
 
     if (_logger.IsEnabled(LogLevel.Information))
       _logger.LogInformation("Issued access token: {AccessToken}, id token: {IdToken} for client: {ClientId}", accessToken, idToken, storedClientId);
-    
+
     return Ok(new
     {
       access_token = accessToken,
@@ -148,8 +148,8 @@ public class OidcController(IOptions<OidcSettings> settings, OidcUserStore userS
 
   private string BuildIdToken(string clientId)
   {
-    var user = _userStore.GetByUsername(clientId) 
-      ?? _userStore.All().FirstOrDefault() 
+    var user = _userStore.GetByUsername(clientId)
+      ?? _userStore.All().FirstOrDefault()
       ?? throw new InvalidOperationException($"No users found in user store");
     var now = DateTime.UtcNow;
     var claims = new List<Claim>

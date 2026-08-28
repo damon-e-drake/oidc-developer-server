@@ -43,20 +43,20 @@ The project includes a `test.http` file for easy API testing directly in Visual 
 
 2. **Open test.http** in Visual Studio
 
-3. **Run Request #3** to get an authorization code:
+3. **Run any authorization request** (e.g., Request #3 for Bugs Bunny):
    - Click "Send Request" above the request
-   - Copy the `code` value from the JSON response
+   - The response automatically captures the authorization code
 
-4. **Update the variable** at the top of the file:
-   ```
-   @codeForBugs = PASTE_YOUR_CODE_HERE
-   ```
-
-5. **Run Request #5** to exchange the code for tokens:
+4. **Run the corresponding token request** (e.g., Request #4 for Bugs Bunny):
+   - The code is automatically extracted from the previous response
    - Returns `access_token` and `id_token`
    - Decode the JWT at https://jwt.io to inspect claims
 
-6. **Test different users** by using `client_id=daffy` in requests #4 and #6
+5. **Test different users** by running their respective authorization + token request pairs:
+   - Bugs Bunny: Requests #3 & #4
+   - Daffy Duck: Requests #5 & #6
+   - Tweety Bird: Requests #7 & #8
+   - And more...
 
 ## Endpoints
 
